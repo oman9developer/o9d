@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oman9Developer | Unity/Flutter Apps, Tools & Game Development</title>
+    <style>
+        :root {
+            --bg-color: #0D1117;
+            --surface-color: #161B22;
+            --primary-cyan: #00FFFF;
+            --text-main: #E6EDF3;
+            --text-muted: #8B949E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            border: 2px solid var(--primary-cyan);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 2rem;
+            color: var(--primary-cyan);
+            background-color: var(--surface-color);
+            <img src="O9D_Logo.png" alt="O9D Logo" style="width: 100%; border-radius: 12px;"> */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h2 {
+            color: var(--primary-cyan);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            padding-bottom: 0.5rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 255, 0.4);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: rgba(0, 255, 255, 0.1);
+            color: var(--primary-cyan);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--primary-cyan);
+            border: 2px solid var(--primary-cyan);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-cyan);
+            color: var(--bg-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 600px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">O9D</div>
+        <h1>Oman9Developer</h1>
+        <p>Unity/Flutter Developer</p>
+        <p>Apps, Games & High-Tech Workflow Tools Development</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Work Samples</h2>
+            <div class="portfolio-grid">
+                
+                <div class="card">
+                    <h3>SDKBuildStripper</h3>
+                    <p>A professional Unity utility designed to manage SDK inclusions and exclusions for specific build profiles. Automates pipeline optimization utilizing Define-Constraints and Scripting-Defines to ensure lean, platform-specific outputs.</p>
+                    <div class="tag-container">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Editor Tool</span>
+                        <span class="tag">Build Pipeline</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>GameKit Pro</h3>
+                    <p>A comprehensive digital toolkit application designed for board game enthusiasts. Features functional UI/UX design, custom 3D-styled dice rollers, modular timers, and robust score tracking utilizing a clean architecture framework.</p>
+                    <div class="tag-container">
+                        <span class="tag">C#</span>
+                        <span class="tag">Mobile Apps</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Cross-Platform</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>3D Dots & Boxes (Lines2Lands)</h3>
+                    <p>A thrilling 3D twist on the classic Dots and Boxes game. Perfect for fans of strategy, puzzle, and board games!.</p>
+                    <div class="tag-container">
+                        <span class="tag">C#</span>
+                        <span class="tag">Mobile Apps</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Cross-Platform</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact & Support</h2>
+            <div class="contact-section">
+                <p>For support regarding Unity Assets, documentation requests, or professional inquiries, please reach out via email. I am dedicated to providing timely support for all O9D tools.</p>
+                <a href="mailto:omn9dev.app.sup@gmail.com" class="btn">Email Support</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Oman9Developer. All rights reserved.
+    </footer>
+
+</body>
+</html>
